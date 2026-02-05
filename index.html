@@ -1,29 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BeFit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    /* NAVBAR */
+    nav {
+      background-color: #2ecc71;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+      height: 350px;
+      background-image: url("images/healthy food.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #2ecc71;
+      margin-bottom: 20px;
+    }
+
+    /* CARDS */
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* CONTACT */
+    .contact {
+      background-color: #2ecc71;
+      color: white;
+    }
+
+    .contact img {
+      width: 250px;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    footer {
+      padding: 15px;
+      text-align: center;
+      background-color: #1e8449;
+      color: white;
+    }
+  </style>
+</head>
+
 <body>
 
-  <!-- HERO SECTION -->
-  <div class="hero">
+  <!-- NAV -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero" id="home">
     BeFit – Stay Healthy
   </div>
 
   <!-- ABOUT -->
   <div class="section">
     <h2>About BeFit</h2>
-    <p>Your fitness companion for a healthy lifestyle.</p>
+    <p>Your trusted partner for fitness, nutrition, and a healthy lifestyle.</p>
   </div>
 
   <!-- SERVICES -->
-  <div class="section">
+  <div class="section" id="services">
     <h2>Our Services</h2>
-    <div class="gallery">
-      <div>
+    <div class="cards">
+      <div class="card">
         <img src="images/weight loss.jfif" alt="Weight Loss">
         <p>Weight Loss Programs</p>
       </div>
-      <div>
+      <div class="card">
         <img src="images/dietician image.webp" alt="Dietician">
         <p>Dietician Support</p>
       </div>
-      <div>
+      <div class="card">
         <img src="images/healthy food.jpg" alt="Healthy Food">
         <p>Healthy Meal Plans</p>
       </div>
@@ -31,11 +145,16 @@
   </div>
 
   <!-- CONTACT -->
-  <div class="section">
+  <div class="section contact" id="contact">
     <h2>Contact Us</h2>
-    <img src="images/contact us.jfif" width="300" alt="Contact">
+    <img src="images/contact us.jfif" alt="Contact">
     <p>Email: befit@email.com</p>
     <p>Phone: +91 98765 43210</p>
   </div>
 
+  <footer>
+    © 2026 BeFit. All rights reserved.
+  </footer>
+
 </body>
+</html>
