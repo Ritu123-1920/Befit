@@ -5,29 +5,10 @@
   <title>BeFit | Patient Care & Wellness</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  .review-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.review-card {
-  background: white;
-  max-width: 300px;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-.review-card p {
-  font-size: 15px;
-}
-
-.review-card strong {
-  color: #2ecc71;
-}
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -102,6 +83,27 @@
       border-radius: 10px;
     }
 
+    /* REVIEWS */
+    .review-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .review-card {
+      background: white;
+      max-width: 300px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .review-card strong {
+      color: #2ecc71;
+    }
+
     .contact {
       background-color: #2ecc71;
       color: white;
@@ -141,7 +143,7 @@
 
 <body>
 
-  <!-- NAV -->
+  <!-- NAVIGATION -->
   <nav>
     <a href="#home">Home</a>
     <a href="#services">Services</a>
@@ -161,7 +163,7 @@
     <p>
       BeFit is a wellness and nutrition platform focused on patient-centered care.
       We provide personalized diet plans and lifestyle guidance to help manage
-      medical conditions and improve overall health safely and ethically.
+      medical and lifestyle-related conditions safely and ethically.
     </p>
   </div>
 
@@ -169,9 +171,8 @@
   <div class="section" style="background:#ffffff;">
     <h2>Meet Our Specialist</h2>
     <img src="images/dietician image.webp" width="180" style="border-radius:50%;">
-    <p><strong>Ritu Arora</strong></p>
-    <p>Certified Dietician & Wellness Consultant</p>
-    <p>5+ years experience in patient-focused nutrition care</p>
+    <p><strong>Ritu</strong></p>
+    <p>Nutrition & Wellness Consultant</p>
   </div>
 
   <!-- SERVICES -->
@@ -202,60 +203,61 @@
     <p>
       ✔️ Diabetes & Pre-Diabetes<br>
       ✔️ Thyroid Disorders<br>
-      ✔️ PCOS & Hormonal Imbalance<br>
+      ✔️ PCOD / PCOS<br>
       ✔️ Obesity & Digestive Issues<br>
       ✔️ Post-illness Recovery
     </p>
   </div>
 
-<div class="section">
-  <h2>What Our Patients Say</h2>
+  <!-- PATIENT REVIEWS -->
+  <div class="section">
+    <h2>What Our Patients Say</h2>
 
-  <div class="review-grid">
+    <div class="review-grid">
 
-    <div class="review-card">
-      <p>
-        “I lost 8 kg in 3 months with healthy and sustainable diet plans.
-        The guidance was very supportive throughout my journey.”
-      </p>
-      <strong>– Anjali</strong>
+      <div class="review-card">
+        <p>
+          “I lost 8 kg in 3 months with healthy and sustainable diet plans.
+          The guidance was very supportive.”
+        </p>
+        <strong>– Anjali</strong>
+      </div>
+
+      <div class="review-card">
+        <p>
+          “Very professional and caring approach.
+          My blood sugar levels are now well controlled.”
+        </p>
+        <strong>– Rohit</strong>
+      </div>
+
+      <div class="review-card">
+        <p>
+          “The diet plan was easy to follow and suited my daily routine.
+          I feel more energetic now.”
+        </p>
+        <strong>– Priya</strong>
+      </div>
+
+      <div class="review-card">
+        <p>
+          “Excellent support during my thyroid management.
+          Regular follow-ups really helped.”
+        </p>
+        <strong>– Neha</strong>
+      </div>
+
+      <div class="review-card">
+        <p>
+          “I was diagnosed with PCOD and struggled with irregular periods and weight gain.
+          The personalized diet and lifestyle guidance helped improve my overall health.”
+        </p>
+        <strong>– Pooja (PCOD Patient)</strong>
+      </div>
+
     </div>
-
-    <div class="review-card">
-      <p>
-        “Very professional and caring approach.
-        My blood sugar levels are now well controlled.”
-      </p>
-      <strong>– Rohit</strong>
-    </div>
-
-    <div class="review-card">
-      <p>
-        “The diet plan was easy to follow and suited my daily routine.
-        I feel more energetic and confident now.”
-      </p>
-      <strong>– Priya</strong>
-    </div>
-
-    <div class="review-card">
-      <p>
-        “Excellent support during my thyroid management.
-        Regular follow-ups made a big difference.”
-      </p>
-      <strong>– Neha</strong>
-    </div>
-
-    <div class="review-card">
-      <p>
-        “I was diagnosed with PCOD and struggled with irregular periods and weight gain.
-        The personalized diet and lifestyle guidance helped improve my hormonal balance
-        and overall health.”
-      </p>
-      <strong>– Pooja (PCOD Patient)</strong>
-    </div>
-
   </div>
-</div>
+
   <!-- CONTACT -->
   <div class="section contact" id="contact">
     <h2>Book an Appointment</h2>
