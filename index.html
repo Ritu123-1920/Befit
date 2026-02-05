@@ -5,10 +5,29 @@
   <title>BeFit | Patient Care & Wellness</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+  .review-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review-card {
+  background: white;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.review-card p {
+  font-size: 15px;
+}
+
+.review-card strong {
+  color: #2ecc71;
+}
 
     body {
       margin: 0;
@@ -189,15 +208,54 @@
     </p>
   </div>
 
-  <!-- TESTIMONIALS -->
-  <div class="section">
-    <h2>What Our Patients Say</h2>
-    <p>“I lost 8 kg in 1 months with healthy guidance.”</p>
-    <strong>– Anjali</strong><br><br>
-    <p>“Very supportive and professional approach.”</p>
-    <strong>– Rohit</strong>
-  </div>
+<div class="section">
+  <h2>What Our Patients Say</h2>
 
+  <div class="review-grid">
+
+    <div class="review-card">
+      <p>
+        “I lost 8 kg in 3 months with healthy and sustainable diet plans.
+        The guidance was very supportive throughout my journey.”
+      </p>
+      <strong>– Anjali</strong>
+    </div>
+
+    <div class="review-card">
+      <p>
+        “Very professional and caring approach.
+        My blood sugar levels are now well controlled.”
+      </p>
+      <strong>– Rohit</strong>
+    </div>
+
+    <div class="review-card">
+      <p>
+        “The diet plan was easy to follow and suited my daily routine.
+        I feel more energetic and confident now.”
+      </p>
+      <strong>– Priya</strong>
+    </div>
+
+    <div class="review-card">
+      <p>
+        “Excellent support during my thyroid management.
+        Regular follow-ups made a big difference.”
+      </p>
+      <strong>– Neha</strong>
+    </div>
+
+    <div class="review-card">
+      <p>
+        “I was diagnosed with PCOD and struggled with irregular periods and weight gain.
+        The personalized diet and lifestyle guidance helped improve my hormonal balance
+        and overall health.”
+      </p>
+      <strong>– Pooja (PCOD Patient)</strong>
+    </div>
+
+  </div>
+</div>
   <!-- CONTACT -->
   <div class="section contact" id="contact">
     <h2>Book an Appointment</h2>
