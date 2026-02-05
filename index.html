@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BeFit</title>
+  <title>BeFit | Patient Care & Wellness</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -13,7 +13,6 @@
       color: #333;
     }
 
-    /* NAVBAR */
     nav {
       background-color: #2ecc71;
       padding: 15px;
@@ -28,26 +27,22 @@
       text-decoration: none;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* HERO */
     .hero {
-      height: 350px;
+      height: 380px;
       background-image: url("images/healthy food.jpg");
       background-size: cover;
       background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
       color: white;
-      font-size: 40px;
+      font-size: 38px;
       font-weight: bold;
-      text-shadow: 2px 2px 5px black;
+      text-shadow: 2px 2px 6px black;
+      padding: 20px;
     }
 
-    /* SECTIONS */
     .section {
       padding: 50px 20px;
       text-align: center;
@@ -58,7 +53,6 @@
       margin-bottom: 20px;
     }
 
-    /* CARDS */
     .cards {
       display: flex;
       justify-content: center;
@@ -68,9 +62,9 @@
 
     .card {
       background: white;
-      width: 260px;
+      width: 270px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       padding: 15px;
     }
 
@@ -84,16 +78,9 @@
       font-weight: bold;
     }
 
-    /* CONTACT */
     .contact {
       background-color: #2ecc71;
       color: white;
-    }
-
-    .contact img {
-      width: 250px;
-      border-radius: 10px;
-      margin: 15px 0;
     }
 
     footer {
@@ -107,22 +94,29 @@
 
 <body>
 
-  <!-- NAV -->
+  <!-- NAVIGATION -->
   <nav>
     <a href="#home">Home</a>
     <a href="#services">Services</a>
+    <a href="#patients">Patient Care</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <!-- HERO -->
   <div class="hero" id="home">
-    BeFit – Stay Healthy
+    Holistic Health, Nutrition & Patient Care<br>
+    <span style="font-size:22px;">Personalized plans for long-term wellness</span>
   </div>
 
   <!-- ABOUT -->
   <div class="section">
     <h2>About BeFit</h2>
-    <p>Your trusted partner for fitness, nutrition, and a healthy lifestyle.</p>
+    <p>
+      BeFit is a wellness and nutrition platform focused on improving health through
+      personalized diet plans, lifestyle management, and patient-centered care.
+      We work closely with individuals and patients to help manage weight,
+      nutrition-related conditions, and overall well-being.
+    </p>
   </div>
 
   <!-- SERVICES -->
@@ -131,29 +125,50 @@
     <div class="cards">
       <div class="card">
         <img src="images/weight loss.jfif" alt="Weight Loss">
-        <p>Weight Loss Programs</p>
+        <p>Weight Management Programs</p>
       </div>
       <div class="card">
         <img src="images/dietician image.webp" alt="Dietician">
-        <p>Dietician Support</p>
+        <p>Dietician Consultation</p>
       </div>
       <div class="card">
         <img src="images/healthy food.jpg" alt="Healthy Food">
-        <p>Healthy Meal Plans</p>
+        <p>Customized Meal Planning</p>
       </div>
     </div>
   </div>
 
+  <!-- PATIENT CARE -->
+  <div class="section" id="patients">
+    <h2>Patient Care & Conditions We Support</h2>
+    <p>
+      We provide nutrition and lifestyle support for patients dealing with:
+    </p>
+    <p>
+      ✔️ Obesity & Weight-related issues<br>
+      ✔️ Diabetes & Pre-Diabetes<br>
+      ✔️ Thyroid Disorders<br>
+      ✔️ PCOS / Hormonal Imbalance<br>
+      ✔️ Digestive Issues<br>
+      ✔️ Post-illness recovery
+    </p>
+    <p>
+      Each patient receives a personalized consultation, progress monitoring,
+      and continuous guidance based on their health needs.
+    </p>
+  </div>
+
   <!-- CONTACT -->
   <div class="section contact" id="contact">
-    <h2>Contact Us</h2>
-    <img src="images/contact us.jfif" alt="Contact">
+    <h2>Contact & Appointments</h2>
+    <img src="images/contact us.jfif" width="250" alt="Contact">
     <p>Email: befit@email.com</p>
-    <p>Phone: +91 98765 43210</p>
+    <p>Phone / WhatsApp: +91 98765 43210</p>
+    <p>Consultation available by appointment</p>
   </div>
 
   <footer>
-    © 2026 BeFit. All rights reserved.
+    © 2026 BeFit | Health, Nutrition & Patient Care
   </footer>
 
 </body>
