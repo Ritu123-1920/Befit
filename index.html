@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #f4f6f8;
       color: #333;
+      line-height: 1.7;
     }
 
     nav {
@@ -20,6 +25,9 @@
       justify-content: center;
       gap: 30px;
       font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
     nav a {
@@ -37,15 +45,17 @@
       justify-content: center;
       text-align: center;
       color: white;
-      font-size: 38px;
+      font-size: 36px;
       font-weight: bold;
       text-shadow: 2px 2px 6px black;
       padding: 20px;
     }
 
     .section {
-      padding: 50px 20px;
+      padding: 60px 20px;
       text-align: center;
+      max-width: 1100px;
+      margin: auto;
     }
 
     .section h2 {
@@ -73,14 +83,32 @@
       border-radius: 10px;
     }
 
-    .card p {
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
     .contact {
       background-color: #2ecc71;
       color: white;
+    }
+
+    input, textarea {
+      width: 90%;
+      max-width: 400px;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 25px;
+      background: #2ecc71;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #27ae60;
+      cursor: pointer;
     }
 
     footer {
@@ -94,7 +122,7 @@
 
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- NAV -->
   <nav>
     <a href="#home">Home</a>
     <a href="#services">Services</a>
@@ -105,18 +133,26 @@
   <!-- HERO -->
   <div class="hero" id="home">
     Holistic Health, Nutrition & Patient Care<br>
-    <span style="font-size:22px;">Personalized plans for long-term wellness</span>
+    <span style="font-size:20px;">Personalized plans for long-term wellness</span>
   </div>
 
   <!-- ABOUT -->
   <div class="section">
     <h2>About BeFit</h2>
     <p>
-      BeFit is a wellness and nutrition platform focused on improving health through
-      personalized diet plans, lifestyle management, and patient-centered care.
-      We work closely with individuals and patients to help manage weight,
-      nutrition-related conditions, and overall well-being.
+      BeFit is a wellness and nutrition platform focused on patient-centered care.
+      We provide personalized diet plans and lifestyle guidance to help manage
+      medical conditions and improve overall health safely and ethically.
     </p>
+  </div>
+
+  <!-- SPECIALIST -->
+  <div class="section" style="background:#ffffff;">
+    <h2>Meet Our Specialist</h2>
+    <img src="images/dietician image.webp" width="180" style="border-radius:50%;">
+    <p><strong>Ritu Sharma</strong></p>
+    <p>Certified Dietician & Wellness Consultant</p>
+    <p>5+ years experience in patient-focused nutrition care</p>
   </div>
 
   <!-- SERVICES -->
@@ -124,50 +160,56 @@
     <h2>Our Services</h2>
     <div class="cards">
       <div class="card">
-        <img src="images/weight loss.jfif" alt="Weight Loss">
+        <img src="images/weight loss.jfif">
         <p>Weight Management Programs</p>
       </div>
       <div class="card">
-        <img src="images/dietician image.webp" alt="Dietician">
-        <p>Dietician Consultation</p>
+        <img src="images/healthy food.jpg">
+        <p>Customized Meal Planning</p>
       </div>
       <div class="card">
-        <img src="images/healthy food.jpg" alt="Healthy Food">
-        <p>Customized Meal Planning</p>
+        <img src="images/dietician image.webp">
+        <p>Dietician Consultation</p>
       </div>
     </div>
   </div>
 
   <!-- PATIENT CARE -->
-  <div class="section" id="patients" style="background-color:#ffffff; border-top:4px solid #2ecc71;">
-   <h2>Patient Care & Conditions We Support</h2>
-<p style="font-size:18px; font-weight:bold;">
-  Compassionate care for medical & lifestyle-related conditions
-</p>
-    <p>
-      We provide nutrition and lifestyle support for patients dealing with:
+  <div class="section" id="patients" style="background:#ffffff; border-top:4px solid #2ecc71;">
+    <h2>Patient Care & Conditions We Support</h2>
+    <p style="font-size:18px; font-weight:bold;">
+      Compassionate care for medical & lifestyle-related conditions
     </p>
     <p>
-      ✔️ Obesity & Weight-related issues<br>
       ✔️ Diabetes & Pre-Diabetes<br>
       ✔️ Thyroid Disorders<br>
-      ✔️ PCOS / Hormonal Imbalance<br>
-      ✔️ Digestive Issues<br>
-      ✔️ Post-illness recovery
+      ✔️ PCOS & Hormonal Imbalance<br>
+      ✔️ Obesity & Digestive Issues<br>
+      ✔️ Post-illness Recovery
     </p>
-    <p>
-      Each patient receives a personalized consultation, progress monitoring,
-      and continuous guidance based on their health needs.
-    </p>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <div class="section">
+    <h2>What Our Patients Say</h2>
+    <p>“I lost 8 kg in 3 months with healthy guidance.”</p>
+    <strong>– Anjali</strong><br><br>
+    <p>“Very supportive and professional approach.”</p>
+    <strong>– Rohit</strong>
   </div>
 
   <!-- CONTACT -->
   <div class="section contact" id="contact">
-    <h2>Contact & Appointments</h2>
-    <img src="images/contact us.jfif" width="250" alt="Contact">
-    <p>Email: befit@email.com</p>
-    <p>Phone / WhatsApp: +91 98765 43210</p>
-    <p>Consultation available by appointment</p>
+    <h2>Book an Appointment</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required><br>
+      <input type="email" placeholder="Email" required><br>
+      <input type="tel" placeholder="Phone Number" required><br>
+      <textarea rows="4" placeholder="Health Concern"></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+    <br>
+    <img src="images/contact us.jfif" width="220">
   </div>
 
   <footer>
